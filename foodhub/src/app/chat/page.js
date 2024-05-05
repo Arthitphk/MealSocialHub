@@ -236,7 +236,7 @@ const ChatPage = () => {
               </div>
               <div className="flex justify-start mb-4">
                 <img
-                  src="https://source.unsplash.com/vpOeXr5wmR4/600x600"
+                  src="https://source.unsplash.com/_7LbC5J-jw4/600x600"
                   className="object-cover h-8 w-8 rounded-full"
                   alt=""
                 />
@@ -268,7 +268,7 @@ const ChatPage = () => {
               </div>
               <div className="flex justify-start mb-4">
                 <img
-                  src="https://source.unsplash.com/vpOeXr5wmR4/600x600"
+                  src="https://source.unsplash.com/_7LbC5J-jw4/600x600"
                   className="object-cover h-8 w-8 rounded-full"
                   alt=""
                 />
