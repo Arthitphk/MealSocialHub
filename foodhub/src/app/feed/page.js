@@ -1,12 +1,14 @@
 import React from 'react'
+import EmailIcon from '@mui/icons-material/Email';
+import SettingsIcon from '@mui/icons-material/Settings';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import GroupIcon from '@mui/icons-material/Group';
 
 const FeedPage = () => {
   return (
-    
-
-
-
-  <div className="w-full  h-screen flex flex-row flex-wrap justify-center container mx-auto"> 
+  
+  <div className="w-full  h-screen flex flex-row flex-wrap justify-center container mx-auto "> 
     <div className="bg-white shadow-lg border-t-4 absolute bottom-0 w-full md:w-0 md:hidden flex flex-row flex-wrap">
       <div className="w-full text-right"><button className="p-2 fa fa-bars text-4xl text-gray-600"></button></div>
     </div>
@@ -19,15 +21,17 @@ const FeedPage = () => {
         </div>
       </div>
       <div className="w-full h-screen antialiased flex flex-col hover:cursor-pointer">
-        <a className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href=""><i className="fa fa-comment text-gray-600 text-2xl pr-1 pt-1 float-right"></i>Messages</a>
-        <a className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href=""><i className="fa fa-cog text-gray-600 text-2xl pr-1 pt-1 float-right"></i>Settings</a>
-        <a className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href=""><i className="fa fa-arrow-left text-gray-600 text-2xl pr-1 pt-1 float-right"></i>Log out</a>
+        <a className="hover:bg-blue-400 bg-slate-100 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href="">Messages<EmailIcon className='float-right'/></a>
+        <a className="hover:bg-blue-400 bg-slate-100 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href="">Friend<GroupIcon className='float-right'/></a>
+        <a className="hover:bg-blue-400 bg-slate-100 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href="">Food Delivery<DeliveryDiningIcon className='float-right'/></a>
+        <a className="hover:bg-blue-400 bg-slate-100 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href="">Settings<SettingsIcon className='float-right'/></a>
+        <a className="hover:bg-blue-400 bg-slate-100 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold" href="">Log out<ArrowForwardIcon className='float-right'/></a>
       </div>
     </div>
     
     
 
-    <div className="w-full md:w-3/4 lg:w-4/5 p-5 md:px-12 lg:24 h-full overflow-x-scroll antialiased">
+    <div className="w-full md:w-3/4 lg:w-4/5 p-5 md:px-12 lg:24 h-full overflow-x-scroll antialiased ">
       <div className="grid grid-cols-1 gap-4 ">
           <div className="bg-white border border-slate-200 grid grid-cols-6 gap-2 rounded-xl p-2 text-sm">
               <h1 className="text-center text-slate-200 text-xl font-bold col-span-6">What are you thinking John</h1>
@@ -172,6 +176,130 @@ const FeedPage = () => {
               
             </div>
           </div>
+
+          <div class="bg-white p-8 shadow-md rounded-lg">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <img src="https://m.media-amazon.com/images/I/41jLBhDISxL.jpg" alt="User Avatar" class="w-8 h-8 rounded-full"/>
+                <div>
+                  <p class="text-gray-800 font-semibold">John Doe</p>
+                  <p class="text-gray-500 text-sm">Posted 2 hours ago</p>
+                </div>
+              </div>
+              <div class="text-gray-500 cursor-pointer">
+                
+                <button class="hover:bg-gray-50 rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="7" r="1" />
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="17" r="1" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <p class="text-gray-800">nice</p>
+            </div>
+            
+            <div class="mb-4">
+              <img src="https://st2.depositphotos.com/1790318/11580/i/450/depositphotos_115803268-stock-photo-salmon-steak-on-wooden-table.jpg" alt="Post Image" class="w-full h-full object-cover rounded-md"/>
+            </div>
+            
+            <div class="flex items-center justify-between text-gray-500">
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                  <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C6.11 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-4.11 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <span>32 Likes</span>
+                </button>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22ZM8 13.25C7.58579 13.25 7.25 13.5858 7.25 14C7.25 14.4142 7.58579 14.75 8 14.75H13.5C13.9142 14.75 14.25 14.4142 14.25 14C14.25 13.5858 13.9142 13.25 13.5 13.25H8ZM7.25 10.5C7.25 10.0858 7.58579 9.75 8 9.75H16C16.4142 9.75 16.75 10.0858 16.75 10.5C16.75 10.9142 16.4142 11.25 16 11.25H8C7.58579 11.25 7.25 10.9142 7.25 10.5Z"></path>
+                  </svg>
+                  <span>6 Comment</span>
+                </button>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                  <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16l6-6-6-6"/><path d="M4 21v-7a4 4 0 0 1 4-4h11"/></svg>
+                  </svg>
+                  <span>453 Share</span>
+                </button>
+              </div>
+              
+              
+            </div>
+          </div>
+
+          <div class="bg-white p-8 shadow-md rounded-lg">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <img src="https://m.media-amazon.com/images/I/41jLBhDISxL.jpg" alt="User Avatar" class="w-8 h-8 rounded-full"/>
+                <div>
+                  <p class="text-gray-800 font-semibold">John Doe</p>
+                  <p class="text-gray-500 text-sm">Posted 2 hours ago</p>
+                </div>
+              </div>
+              <div class="text-gray-500 cursor-pointer">
+                
+                <button class="hover:bg-gray-50 rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="7" r="1" />
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="17" r="1" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <p class="text-gray-800"> Clean Day</p>
+            </div>
+            
+            <div class="mb-4">
+              <img src="https://us.123rf.com/450wm/antalexstudio/antalexstudio2304/antalexstudio230401658/203212925-top-view-seafood-dishes-on-wooden-table.jpg?ver=6" alt="Post Image" class="w-full h-full object-cover rounded-md"/>
+            </div>
+            
+            <div class="flex items-center justify-between text-gray-500">
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                  <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C6.11 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-4.11 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <span>32 Likes</span>
+                </button>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22ZM8 13.25C7.58579 13.25 7.25 13.5858 7.25 14C7.25 14.4142 7.58579 14.75 8 14.75H13.5C13.9142 14.75 14.25 14.4142 14.25 14C14.25 13.5858 13.9142 13.25 13.5 13.25H8ZM7.25 10.5C7.25 10.0858 7.58579 9.75 8 9.75H16C16.4142 9.75 16.75 10.0858 16.75 10.5C16.75 10.9142 16.4142 11.25 16 11.25H8C7.58579 11.25 7.25 10.9142 7.25 10.5Z"></path>
+                  </svg>
+                  <span>6 Comment</span>
+                </button>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <button class="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                  <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16l6-6-6-6"/><path d="M4 21v-7a4 4 0 0 1 4-4h11"/></svg>
+                  </svg>
+                  <span>453 Share</span>
+                </button>
+              </div>
+              
+              
+            </div>
+          </div>
+
+
 
           
 
